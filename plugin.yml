@@ -1,25 +1,23 @@
-name: AdvancedKits
+name: Kits
 main: AdvancedKits\Main
 version: 5.2.3
 api: [3.0.0]
 author: luca28pet
-description: Add kits to your server
-website: https://github.com/luca28pet/AdvancedKits
 softdepend: [PurePerms, PiggyCustomEnchants, FormAPI]
 commands:
  kit:
-  description: Get a kit!
-  usage: "/kit <kitName>"
+  description: kit command
+  usage: "/kit"
   aliases: [ak, advancedkits]
   permission: advancedkits.command
  akreload:
-  descrpition: Reload Kits settings
+  descrpition: reloads kit settings
   usage: "/akreload"
   permission: advancedkits.admin
 permissions:
  advancedkits.command:
-  description: "Allows the user to run /kit command"
+  description: ""
   default: true
  advancedkits.admin:
-  description: "Allows to manage admin features"
+  description: ""
   default: op
