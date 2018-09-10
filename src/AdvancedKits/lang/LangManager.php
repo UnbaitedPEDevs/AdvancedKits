@@ -20,7 +20,7 @@ class LangManager{
         $this->defaults = [
             'lang-version' => self::LANG_VERSION,
             'in-game' => self::PREFIX.'Please run this command in game',
-            'av-kits' => self::PREFIX.'Available kits: {%0}',
+            'av-kits' => self::PREFIX.'§c§lBlackWebPE Kits: {%0}',
             'no-kit' => self::PREFIX.'Kit {%0} does not exist',
             'reload' => self::PREFIX.'Reloaded kits settings',
             'sel-kit' => self::PREFIX.'Selected kit: {%0}',
@@ -34,7 +34,7 @@ class LangManager{
             'cooldown-format3' => self::PREFIX.'{%0} hours',
             'no-sign-on-kit' => self::PREFIX.'On this sign, the kit is not specified',
             'no-perm-sign' => self::PREFIX.'You don\'t have permission to create a sign kit',
-            'form-title' => self::PREFIX.'Available Kits'
+            'form-title' => self::PREFIX.'§c§lBlackWebPE Kits'
         ];
         $this->data = new Config($this->ak->getDataFolder().'lang.properties', Config::PROPERTIES, $this->defaults);
         if($this->data->get('lang-version') != self::LANG_VERSION){
